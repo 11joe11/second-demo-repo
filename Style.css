@@ -1,0 +1,154 @@
+/*
+
+* this type of style is external 
+
+*/
+
+/** to style an element on form.html */
+[type = 'checkbox'] {
+    color: rgb(0, 136, 255);
+    margin: 10px;
+}
+
+/** to style class likee in form.html*/
+.likee {
+    color: rgb(70, 20, 251);
+}
+
+.white-text {
+    color: white;
+}
+
+.red-text {
+    color: red;
+}
+
+h2,h3,h4,h5,h6 {
+    color: white;
+}
+
+a {
+    color: rgba(0, 0, 250, 0.947);
+}
+
+.width_img {
+    width: 1000px;
+    /** adjust the width of the img */
+}
+
+/** Borders */
+
+.thick-purple-border {
+    border-color: rgb(123, 0, 254);
+    border-width: 15px;
+    border-radius: 50%; /** Its makes the border around the image more rounded */
+    border-style: solid;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 15px ;
+    padding: 5px;
+}
+
+.dotted-border {
+    border-style: dotted;
+    border-width: 10px;
+    margin-top: 60px;
+}
+
+.dash-border {
+    border-style: dashed;
+    border-color: red;
+    margin-top: 60px;
+}
+
+.double-border {
+    border-style: double;
+    padding: 2%;
+    margin-top: 60px;
+    border-left: solid 15px;
+    border-color: red green blue rgb(0, 200, 255); /* red top, green right, blue bottom and yellow left */
+}
+
+.groove-border {
+    border-style: groove;
+    border-left: 10px solid red;
+    border-right: 10px solid black;
+    border-bottom: 60px thick grey;
+    border-top: 60px thick grey;
+    padding: 20px;
+    margin-top: 60px;
+    
+}
+
+.ridge-border {
+    border-style: ridge;
+    padding-top: 40px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.inset-border {
+    border-style: inset;
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+
+.outset-border {
+    border-style: outset;
+}
+
+.none-border {
+    border-style: none;
+    padding: 50px;
+    margin: 60px;
+    text-align: center;
+}
+
+.hidden-border {
+    border-style: hidden;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 50px;
+    margin: 60px;
+    text-align: center;
+}
+
+/** by class  */
+.mix-border{
+    border-style: dotted dashed solid double;
+}
+
+.eagle_icon{
+    height: 10px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+/** by Id */
+#background-color
+{
+    background-color: rgb(238, 6, 6);
+    color: white;
+}
+.eagle_icon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 117px;
+}
+.container{
+    position: relative;
+}
+.position-div{
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+}
+

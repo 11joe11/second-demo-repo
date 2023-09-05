@@ -3,17 +3,53 @@
 <html>
 
 <head>
+<!--** To use the free google fonts library -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="icon" type="image/x-icon" href="/Icons folder/eagleicon.jpg"> <!--** To put icon to your webpage -->
+
+    <!--** The (external) link to your style css file for style -->
+    <link rel="stylesheet" href="Style.css">
+    
 
     <title>My first website tutorial</title>
     <link rel="icon" type="image/x-icon" href="/Icons folder/Aiicon.jpg"> <!--** To put icon to your webpage -->
 
 </head>
+<!--** Css Topics
+1- Style blocks
+2- by classes & by id 
+3- font size
+4- font family include google fonts and it should be degrade
+5- how to size the image
+6- borders (tricks go to inspect and enter the 4 values of it clock wise to display what you want)
+7- class & id (class is similar to the id except that each element can only have just one id unlike in the class , id have higher piriority than classes)
+8- padding & marign (Padding represents the amount of inner space an element has, while the margin is whitespace available surrounding an element.) , note they are clockwise
+9- -->
 
-<body>
+<!--** this tyoe of style is Internal -->
+<style>
+    p {
+        color:rgb(66, 203, 12);
+        font-size: 20px;       
+    }
+    .monodmo{
+        font-family: monospace ;
+        color :white
+    }
+    .googlefonts {
+        font-family: "Audiowide" , "Lobster";
+    }
+</style>
+<body style="background-color: black;">
     <!-- This a comment -->
-    <h1>This my website title</h1>
+    <h1 class="red-text" style="font-family: Lobster;">This my website title</h1> <!--** This type of style is inline -->
     <hr> <!-- To make a horizontal line after the line you wrote befor it -->
-    <h1>I'm making a web browser</h1> <!-- h1,2 etc changes how bigger the font is for the lines you wrote -->
+    <h1 class="white-text">I'm making a web browser</h1> <!-- h1,2 etc changes how bigger the font is for the lines you wrote -->
     <h2>I'm making a web browser</h2>
     <h3>I'm making a web browser</h3>
     <br> <!-- makes more than a new line / space  after the line you wrote -->
@@ -26,78 +62,93 @@
     <br>
 
     <a href="hyperlinks.html" target="_blank" title="this takes you to page2 that you have created (in a new tab)">
-        <h1>Go to hyperlinks page</h1> <!--** (will go to page 2 that i have creeated in a new tab) --> 
+        <h1>Go to hyperlinks page</h1> <!--** (will go to page 2 that i have creeated in a new tab) -->
     </a>
 
     <br>
 
     <a href="page2.html" target="_blank" title="this takes you to page2 that you have created (in a new tab)">
-        <h1>Go to page 2</h1> <!--** (will go to page 2 that i have creeated in a new tab) --> 
+        <h1>Go to page2 page</h1> <!--** (will go to page 2 that i have creeated in a new tab) -->
     </a>
 
     <br>
 
     <a href="images.html" target="_blank" title="this takes you to page2 that you have created (in a new tab)">
-        <h1>Go to image page</h1> <!--** (will go to page 2 that i have creeated in a new tab) --> 
+        <h1>Go to image page</h1> <!--** (will go to page 2 that i have creeated in a new tab) -->
     </a>
 
     <br>
 
     <a href="Audio.html" target="_blank" title="this takes you to page2 that you have created (in a new tab)">
-        <h1>Go to audio page</h1> <!--** (will go to page 2 that i have creeated in a new tab) --> 
+        <h1>Go to audio page</h1> <!--** (will go to page 2 that i have creeated in a new tab) -->
     </a>
 
     <br>
 
     <a href="Video.html" target="_blank" title="this takes you to page2 that you have created (in a new tab)">
-        <h1>Go to video page</h1> <!--** (will go to page 2 that i have creeated in a new tab) --> 
+        <h1>Go to video page</h1> <!--** (will go to page 2 that i have creeated in a new tab) -->
     </a>
 
     <a href="Lists.html" target="_blank" title="this takes you to page2 that you have created (in a new tab)">
-        <h1>Go to lists page</h1> <!--** (will go to page 2 that i have creeated in a new tab) --> 
+        <h1>Go to lists page</h1> <!--** (will go to page 2 that i have creeated in a new tab) -->
     </a>
 
     <br>
 
     <a href="Tables.html" target="_blank" title="this takes you to page2 that you have created (in a new tab)">
-        <h1>Go to tables page</h1> <!--** (will go to page 2 that i have creeated in a new tab) --> 
+        <h1>Go to tables page</h1> <!--** (will go to page 2 that i have creeated in a new tab) -->
     </a>
 
     <br>
 
     <a href="iframe.html" target="_blank" title="this takes you to page2 that you have created (in a new tab)">
-        <h1>Go to iframe page</h1> <!--** (will go to page 2 that i have creeated in a new tab) --> 
+        <h1>Go to iframe page</h1> <!--** (will go to page 2 that i have creeated in a new tab) -->
     </a>
 
     <br>
 
     <a href="ad.html" target="_blank" title="this takes you to page2 that you have created (in a new tab)">
-        <h1>Go to ad page</h1> <!--** (will go to page 2 that i have creeated in a new tab) --> 
+        <h1>Go to ad page</h1> <!--** (will go to page 2 that i have creeated in a new tab) -->
     </a>
 
     <br>
 
     <a href="button.html" target="_blank" title="this takes you to page2 that you have created (in a new tab)">
-        <h1>Go to button page</h1> <!--** (will go to page 2 that i have creeated in a new tab) --> 
+        <h1>Go to button page</h1> <!--** (will go to page 2 that i have creeated in a new tab) -->
     </a>
 
     <br>
 
     <a href="forms.html" target="_blank" title="this takes you to page2 that you have created (in a new tab)">
-        <h1>Go to forms page</h1> <!--** (will go to page 2 that i have creeated in a new tab) --> 
+        <h1>Go to forms page</h1> <!--** (will go to page 2 that i have creeated in a new tab) -->
     </a>
-    
+
     <br>
 
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, consequatur nostrum error provident qui sit.
         Quae ea eum alias suscipit quasi, maiores necessitatibus? Earum fuga beatae ea possimus ullam id.</p>
     <br>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad praesentium error sit atque, consequuntur expedita
+    <p class="monodmo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad praesentium error sit atque, consequuntur expedita
         possimus perferendis? Perferendis reprehenderit ullam numquam hic natus voluptatum. Ut fugiat doloribus
         blanditiis aliquid tempore.</p>
     <!-- some text formating examples -->
 
-    <p><span style="background-color: antiquewhite;">This is a <b>Bold</b> text</span></p> <!-- Span used -->
+    <br>
+
+    <div class="googlefonts">
+
+    <p class="font-effect-fire" style="color :white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tempora nam impedit quo odit doloribus cum et, ea quibusdam cupiditate voluptate nostrum harum. Delectus itaque incidunt sequi quis soluta! A?</p>
+    <p class="font-effect-neon" style="color :white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint non eum deleniti dicta. Obcaecati, est! Odit blanditiis aspernatur eum nisi distinctio et qui laborum magnam ut. Facere omnis animi aspernatur.</p>
+    <p class="font-effect-outline" style="color :white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, consequatur nostrum error provident qui sit.
+        Quae ea eum alias suscipit quasi, maiores necessitatibus? Earum fuga beatae ea possimus ullam id.</p>
+    <p class="font-effect-shadow-multiple" style="color :white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad praesentium error sit atque, consequuntur expedita
+        possimus perferendis? Perferendis reprehenderit ullam numquam hic natus voluptatum. Ut fugiat doloribus blanditiis aliquid tempore.</p>
+    
+    </div>
+
+    <br>
+
+    <p><span style="background-color: rgb(200, 99, 56);">This is a <b>Bold</b> text</span></p> <!-- Span used -->
     <p>This is a <i>Italic</i> text</p>
     <p>This is a <Big>Big</Big> text</p>
     <p>This is a <small>Small</small> text</p>

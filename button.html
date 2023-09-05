@@ -4,16 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Button page</title>
 </head>
 <body>
+    <img src="/Images folder/scene image.jpeg" alt="" class="logo" style="width: 180px; cursor: pointer;" onclick="dosomething()">
+    <!-- <button onclick="dosomething()" style="background-color: #333333; color: #00FF00; border-radius: 5px; ">iframe page</button> -->
+    <button onclick="products()" id="ppp" style="background-color: #333333; color: #00FF00; border-radius: 5px; cursor: pointer; ">products</button>
+    <div id="content">
+        
+        
+
+
+
+
+        Hello
     
-    <button onclick="dosomething()" style="background-color: #333333; color: #00FF00; border-radius: 5px; ">Click me</button>
-    <p id="test_test">Hello</p>
+    </div>
     
     <script>
+        //Routing
+        /* here we write content */
+        var titleOne = document.createElement('h5');
+        titleOne.innerHTML="Welcome to page 2 that you have created"
+        var titleTwo = document.createElement('h1');
+        
+        titleTwo.innerHTML="hi!"
+        var titleThree = document.createElement('h1');
+        titleThree.innerHTML="Welcome to page 3 that you have created"
         function dosomething() {
-            document.getElementById("test_test").innerHTML = "Goodbye";
+            var content = document.createElement('div');
+            // content.className="main-div"
+        content.appendChild(titleOne);
+        content.appendChild(titleTwo);
+        content.appendChild(titleThree);
+            document.getElementById("content").innerHTML = "";
+           var divv= document.getElementById("content");
+           divv.appendChild(content)
+        }
+    </script>
+
+    <script>
+
+        // here is the function of the button (products)
+        var proddd = document.createElement('p');
+        proddd.innerHTML="This is the products" 
+        function products() {
+            var ppp = document.createElement('p');
+            ppp.appendChild(proddd);
+            document.getElementById("ppp").innerHTML = "";
+           var vvv= document.getElementById("ppp");
+           vvv.appendChild(ppp)
         }
     </script>
 </body>
